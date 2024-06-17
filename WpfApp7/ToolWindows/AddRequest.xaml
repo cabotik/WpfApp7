@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp7.ToolWindows.AddRequest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7.ToolWindows"
+        mc:Ignorable="d"
+        Title="Add Request" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Margin="5" Content="Enter client"/>
+                <TextBox Margin="5" Name="tbClent" Width="100" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Margin="5" Content="Enter Type Of Malfunction"/>
+                <TextBox Margin="5" Name="tbTypeOfMalfunction" Width="100" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Margin="5" Content="Enter Description"/>
+                <TextBox Margin="5" Name="tbDescription" Width="100" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Margin="5" Content="Enter Device"/>
+                <TextBox Margin="5" Name="tbDevice" Width="100" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Margin="5" Content="Enter Date"/>
+                <TextBox Margin="5" Name="tbDate" Width="100" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Margin="5" Content="Enter Status"/>
+                <TextBox Margin="5" Name="tbStatus" Width="100" Height="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Margin="5" Content="Choose Department"/>
+                <TextBox Margin="5" Name="tbDepartment" Width="100" Height="30"/>
+            </StackPanel>
+            <Button Margin="5" Width="50" Content="Add" Name="btnAddRequest" Click="btnAddRequest_Click" Background="CadetBlue"/>
+            <Button Content="Back" Margin="10" Background="CadetBlue" Width="50" Name="btnBack" Click="btnBack_Click"  ToolTip="Back to previos window"/>
+        </StackPanel>
+    </Grid>
+</Window>

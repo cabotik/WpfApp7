@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp7.UsersWindows.MenagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7.UsersWindows"
+        mc:Ignorable="d"
+        Title="MenagerWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top">
+            <TextBlock Margin="5" Name="tbUserName"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="View Requests" Margin="5" Name="btnView" Click="btnView_Click"/>
+            <Button Content="Statistics" Margin="5" Name="btnSatistics" Click="btnSatistics_Click"/>
+            <Button Content="Change Request" Margin="5" Name="bntChangeRequest" Click="bntChangeRequest_Click"/>
+            <Button Content="Add Request" Margin="5" Name="btnAddRequest" Click="btnAddRequest_Click"/>
+            <Button Content="Exit" Margin="5" Name="btnExit" Click="btnExit_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

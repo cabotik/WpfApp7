@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp7.ToolWindows.RequestList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7.ToolWindows"
+        mc:Ignorable="d"
+        Title="Request List" MaxHeight="600" MaxWidth="1000" MinHeight="600" MinWidth="1000">
+    <Grid>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal">
+           
+            <Button Content="Refeash" Margin="10" Background="CadetBlue" Width="50" Name="btnRefreash" Click="btnRefreash_Click" ToolTip="Refreash requests"/>
+            <Button Content="Back" Margin="10" Background="CadetBlue" Width="50" Name="btnBack" Click="btnBack_Click"  ToolTip="Back to previos window"/>
+        </StackPanel>
+        <StackPanel x:Name="spRequestsView"  >
+            <DataGrid x:Name="dgRequests" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <DataGrid.Columns>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        
+    </Grid>
+</Window>
